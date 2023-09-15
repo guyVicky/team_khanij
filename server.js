@@ -8,10 +8,6 @@ const router = require('./router');
 
 const port = process.env.port || 3000;
 
-const creds = {
-  user: "system",
-  pass: "123"
-}
 
 // app.use(bodyparser.json);
 // app.use(bodyparser.urlencoded({extended: true}));

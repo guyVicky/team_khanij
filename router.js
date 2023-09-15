@@ -7,11 +7,14 @@ const creds = {
 }
 
 router.post('/login', (req, res) => {
+    // console.log(req.body);
+    // res.redirect('/home');
     if (req.body.user == creds.user && req.body.pass == creds.pass) {
         req.session.user = req.body.user;
-        // res.redirect('/home');
         res.end("Chut");
     } else {
         res.end("gaand");
     }
 });
+
+module.exports = router;

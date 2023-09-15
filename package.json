@@ -1,0 +1,19 @@
+{
+  "name": "team_khanij",
+  "version": "1.0.0",
+  "description": "A real-time digital solution that offers comprehensive tracking and monitoring of coal shipments across various transportation modes, enhancing transparency and efficiency in the coal supply chain",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Team Khanij",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.1"
+  }
+}

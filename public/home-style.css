@@ -1,5 +1,5 @@
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family:Verdana, Geneva, Tahoma, sans-serif,
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
@@ -83,6 +83,8 @@ body {
 }
 
 .path-text {
+  min-width: 70%;
+  min-height: 400px;
   background-color: antiquewhite;
   padding: 20px;
   overflow-y: scroll;

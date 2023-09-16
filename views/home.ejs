@@ -6,6 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="static/style2.css">
+  <style>
+    .container_tracker {
+            height: 25cm;
+            width: 2px;
+            border-radius: 5px;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .circle {
+            width: 15px;
+            height: 15px;
+            background-color: #408ad5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Add more circles by duplicating the .circle class with different positions */
+        .circle:nth-child(2) {
+          background-color: rgb(49, 154, 58);
+            top: 0%;
+            left: 50%;
+        }
+
+        .circle:nth-child(3) {
+            top: 12%;
+            left: 50%;
+        }
+
+        .circle:nth-child(4) {
+            top: 22%;
+            left: 50%;
+        }
+        .circle:nth-child(5) {
+            top: 36%;
+            left: 50%;
+        }
+        .circle:nth-child(6) {
+            top: 65%;
+            left: 50%;
+        }
+        .circle:nth-child(7) {
+            top: 75%;
+            left: 50%;
+        }
+        .circle:nth-child(8) {
+            top: 85%;
+            left: 50%;
+        }
+        .circle:nth-child(9) {
+          background-color: red;
+            top: 95%;
+            left: 50%;
+        }
+        #port{
+          padding-left:25px;
+          width: 1000px;
+        }
+  </style>
 </head>
 <body>
 
@@ -118,59 +179,64 @@
   </div>
   
       <div class="path">
-        <div class="login-company">Welcome, [COMPANY]</div>
+        <div class="login-company">TRACKING ID [176789012]</div>
 
         <div class="path-text">
-          <span id="track-id">Tracking ID: 176789012<br /><br /></span>
-
-          Monday, 25 August<br />
-          6:30 AM<br />
-          Cargo loaded onto train<br />
-          Mundra Coal Terminal, Mundra, India<br />
-          Departed from Mundra Coal Terminal<br />
-          Mundra, India<br />
-          <br />
-          Tuesday, 26 August<br />
-          12:15 PM<br />
-          Arrived at Coal Sorting Facility<br />
-          Mundra, India<br />
-          3:45 PM<br />
-          Cargo inspected and graded<br />
-          Mundra, India<br />
-          Wednesday, 27 August<br />
-          7:20 AM<br />
-          Departed from Coal Sorting Facility<br />
-          Mundra, India<br />
-          9:35 AM<br />
-          Cargo transferred to coal freighter<br />
-          Mundra Port, India<br />
-          <br />
-          Thursday, 28 August<br />
-          2:10 PM<br />
-          Coal freighter departs Mundra Port<br />
-          Mundra Port, India<br />
-          <br />
-          Sunday, 31 August<br />
-          8:40 AM<br />
-          Arrived at Colombo Port, Sri Lanka<br />
-          Coal transshipment and quality check<br />
-          Colombo Port, Sri Lanka<br />
-          <br />
-          Monday, 1 September<br />
-          3:15 PM<br />
-          Departed from Colombo Port<br />
-          Coal freighter en route to Port Klang<br />
-          <br />
-          Wednesday, 3 September<br />
-          10:25 AM<br />
-          Coal freighter arrived at Port Klang, Malaysia<br />
-          Unloading and distribution process begins<br />
-          Port Klang, Malaysia<br />
-          <br />
-          Thursday, 4 September<br />
-          11:55 AM<br />
-          Coal cargo successfully delivered<br />
-          Final destination: Port Klang, Malaysia<br />
+          <span id="track-id" style="display: flex;justify-content: center;justify-items: center;">
+            <select style="background-color: transparent; border:none;font-family:monospace;">
+              <option value="TrainName">Cosco Antwerp</option>
+              <option value="TrainName">Train:18812</option>
+              <option value="TrainName">Train:18832</option>
+              <option value="TrainName">Train:17329</option>
+              <option value="TrainName">Train:12384</option>
+              <option value="TrainName">Train:21175</option>
+            </select>
+          </span><br /><br /></span>
+          <div class="container_tracker">
+            <div class="circle"><p id="port"><b style="font-size: large;">Monday, 25 August</b><br/>
+              6:30 AM<br/>
+              Cargo loaded onto train<br/>
+              Mundra Coal Terminal, Mundra, India<br/>
+              Departed from Mundra Coal Terminal<br/>
+              Mundra, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Tuesday, 26 August</b><br/>
+              12:15 PM<br/>
+              Arrived at Coal Sorting Facility<br/>
+              Mundra, India<br/>
+              3:45 PM<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 27 August</b><br/>
+              Cargo inspected and graded<br/>
+              Mundra, India<br/>
+              7:20 AM<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 27 August</b><br/>Departed from Coal Sorting Facility<br/>
+              Mundra, India<br/>
+              9:35 AM<br/>
+              Cargo transferred to coal freighter<br/>
+              Mundra Port, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Thursday, 28 August</b><br/>
+              2:10 PM<br/>
+              Coal freighter departs Mundra Port<br/>
+              Mundra Port, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Sunday, 31 August</b>
+              8:40 AM<br/>
+              Arrived at Colombo Port, Sri Lanka<br/>
+              Coal transshipment and quality check<br/>
+              Colombo Port, Sri Lanka<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Monday, 1 September</b>
+              3:15 PM<br/>
+              Departed from Colombo Port<br/>
+              Coal freighter en route to Port Klang<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 3 September</b>
+              10:25 AM<br/>
+              Coal freighter arrived at Port Klang, Malaysia<br/>
+              Unloading and distribution process begins<br/>
+              Port Klang, Malaysia<br/></p></div>  
+            <div class="circle"><p id="port"><b style="font-size: large;">Thursday, 4 September</b>
+              11:55 AM<br/>
+              Coal cargo successfully delivered<br/>
+              Unloading and distribution process begins<br/>
+              Final destination: Port Klang, Malaysia<br/></p></div>  
+        </div>
         </div>
       </div>
       <div class="map">

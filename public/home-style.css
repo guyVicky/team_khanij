@@ -9,13 +9,17 @@ body {
 }
 
 .container {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: rgb(255, 255, 255);
+}
+
+.header_container {
+  grid-area: 1/1/1/7;
 }
 
 .coal-image {
@@ -32,7 +36,7 @@ body {
   z-index: 1;
   position: relative;
   top: -200px;
-  margin-bottom: -200px;
+  /* margin-bottom: -200px; */
 }
 
 .navbar > nav > ul {
@@ -62,6 +66,7 @@ body {
 }
 
 .path {
+  height:750px;
   margin: 10px 20px 20px 40px;
   grid-area: 2 / 1 / 6 / 3;
   display: flex;
@@ -94,7 +99,7 @@ body {
   display: flex;
   flex-direction: column;
   grid-area: 2 / 3 / 6 / 7;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-right: 40px;
 }
 
@@ -109,4 +114,186 @@ body {
   position: relative;
   top: -20px;
   z-index: 0;
+}
+
+
+.container_black{
+  position:relative;
+  width:100%;
+  height:55px;
+  display: inline-block;
+  flex-direction: row;
+  display:grid;/*to show the grid and display flex to show the flex container*/
+  grid-template-columns: 3fr 7fr; /*for colounm alignment */
+}
+.container_black .left{
+  display: flex;
+  position:relative;
+  align-items: center;
+  
+  /* background-color: rgb(69, 4, 97); */
+}
+.container_black .right{
+  position:relative;
+  background-color: black;
+}
+
+.searchbar input{
+  border-radius: 5px;
+  background-color: rgb(233, 227, 158);
+  color: green;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:2px;
+  margin-left:5px;
+  text-decoration: none;
+  height:35px;
+  font-size: large;
+  border: none;
+  
+}
+.searchbar button{
+  background: none;
+  background-color: transparent;
+  margin-top:2px;
+  border:none;
+  color:white;
+}
+.searchbar button:hover{
+  cursor: pointer;
+}
+
+.container_black .left , .right .div2{
+  background-color: black;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.buttonforships,.buttonforrailway{
+  margin:2px;
+
+}
+
+.buttonforships {
+  border-radius: 5px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.buttonforships, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.buttonforships .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttonforships .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonforships .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.buttonforships:hover {
+  background: #17795E;
+}
+
+.buttonforships:hover .button__text {
+  color: transparent;
+}
+
+.buttonforships:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonforships:active .button__icon {
+  background-color: #146c54;
+}
+
+.buttonforships:active {
+  border: 1px solid #146c54;
+}
+
+
+.buttonforrailway {
+  border-radius: 5px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.buttonforrailway, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.buttonforrailway .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttonforrailway .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonforrailway .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.buttonforrailway:hover {
+  background: #17795E;
+}
+
+.buttonforrailway:hover .button__text {
+  color: transparent;
+}
+
+.buttonforrailway:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonforrailway:active .button__icon {
+  background-color: #146c54;
+}
+
+.buttonforrailway:active {
+  border: 1px solid #146c54;
 }

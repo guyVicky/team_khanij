@@ -37,9 +37,9 @@
     width:0.5px;
     overflow: hidden;
 }
-#ministryofcoal img{
+/* #ministryofcoal img{
    mix-blend-mode: lighten;
-}
+} */
 /*LANGUAGE SELECTOR*/
 #language{
     display: inline-block;
@@ -71,13 +71,21 @@
     justify-items: center; */
 }
 
-
-
+.navbar0 {
+    /* Your existing styles for .navbar0 */
+    display: flex;
+    background-color: rgb(210, 65, 45);
+    height: 40px;
+    width: 100%;
+    /*margin-top: 10px; /* Add margin-top to create space below .aboutt */
+  }
 
 /* Style the navigation bar */
-nav {
+.navbar {
+    display:inline-block;
+    display:flex;
+    flex-direction: row;
     background-color: rgb(210, 65, 45);
-    padding: 10px;
 }
 
 /* Style the navigation list */
@@ -156,4 +164,8 @@ a:hover {
   }
   .right{
     background-color: rgba(202, 58, 58, 0.768);
+  }
+
+  .map{
+    
   }

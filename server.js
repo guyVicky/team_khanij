@@ -31,7 +31,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.render("home", {style: "static/home-style.css", title: "Coal Shipment"});
+  res.render("home", {style: "static/home-style.css", title: "Coal Shipment", apiKey: "AIzaSyAtMa94fLngENSTDSzoZGKSh-xhTALOc_Y"});
+});
+
+app.get('/testmap', (req, res) => {
+  res.render('map', { apiKey: 'AIzaSyAtMa94fLngENSTDSzoZGKSh-xhTALOc_Y' });
 });
 
 app.listen(port, () => {

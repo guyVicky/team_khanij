@@ -74,6 +74,17 @@ body {
   align-items: center;
 }
 
+#g-map {
+  top:-550px;
+  visibility: hidden;
+}
+
+.api-render {
+  position: relative;
+  top: -20px;
+  z-index: 0;
+}
+
 .login-company {
   font-size: 40px;
   color: black;

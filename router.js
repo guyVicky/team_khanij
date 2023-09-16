@@ -11,9 +11,9 @@ router.post('/login', (req, res) => {
     // res.redirect('/home');
     if (req.body.user == creds.user && req.body.pass == creds.pass) {
         req.session.user = req.body.user;
-        res.end("Chut");
+        res.redirect("/home");
     } else {
-        res.end("gaand");
+        res.redirect("/");
     }
 });
 

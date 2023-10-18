@@ -4,7 +4,8 @@
   "description": "A real-time digital solution that offers comprehensive tracking and monitoring of coal shipments across various transportation modes, enhancing transparency and efficiency in the coal supply chain",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "node server.js"
   },
   "author": "Team Khanij",
   "license": "ISC",

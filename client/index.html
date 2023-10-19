@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coal Tracking System</title>
+  </head>
+  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/client/style2.css">
+    <link rel="stylesheet" href="/client/home-style.css"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  <style>
+    .container_tracker {
+            height: 25cm;
+            width: 2px;
+            border-radius: 5px;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .circle {
+            width: 15px;
+            height: 15px;
+            background-color: #408ad5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Add more circles by duplicating the .circle class with different positions */
+        .circle:nth-child(2) {
+          background-color: rgb(49, 154, 58);
+            top: 0%;
+            left: 50%;
+        }
+
+        .circle:nth-child(3) {
+            top: 12%;
+            left: 50%;
+        }
+
+        .circle:nth-child(4) {
+            top: 22%;
+            left: 50%;
+        }
+        .circle:nth-child(5) {
+            top: 36%;
+            left: 50%;
+        }
+        .circle:nth-child(6) {
+            top: 65%;
+            left: 50%;
+        }
+        .circle:nth-child(7) {
+            top: 75%;
+            left: 50%;
+        }
+        .circle:nth-child(8) {
+            top: 85%;
+            left: 50%;
+        }
+        .circle:nth-child(9) {
+          background-color: red;
+            top: 95%;
+            left: 50%;
+        }
+        #port{
+          padding-left:25px;
+          width: 1000px;
+        }
+  </style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="header_container">
+    <div class="header_main">
+      <div class="piccs">
+        <div id="ministryofcoal">
+          <a href="https://coal.nic.in/en" target="_blank"
+            ><img src="/public/assets/Ministry of coal.jpg" alt="" height="130px"
+          /></a>
+        </div>
+    
+        <div id="otherpic">
+          <div id="gatishakti">
+            <a
+              href="https://nmp.pmgatishakti.gov.in/CoalPublic/login"
+              target="_blank"
+              ><img src="/public/assets/gatishakti.jpg" alt="" height="65px" ;
+            /></a>
+          </div>
+          <div id="g20">
+            <a href="https://www.g20.org/" target="_blank"
+              ><img src="/public/assets/G20.jpg" alt="" height="60px"
+            /></a>
+          </div>
+          <div id="coalblockauction">
+            <a
+              href="https://www.mstcecommerce.com/auctionhome/coalblock/index.jsp"
+              target="_blank"
+              ><img src="/public/assets/coalblock1.jpeg" alt="" height="55px"
+            /></a>
+          </div>
+          <div id="aazadi">
+            <a
+              href="https://coal.gov.in/azadi-ka-amrit-mahotsav"
+              target="_blank"
+              ><img src="/public/assets/aazadi.png" alt="" height="65px"
+            /></a>
+          </div>
+          <div id="swachata">
+            <a href="https://swachhbharat.mygov.in/" target="_blank"
+              ><img src="/public/assets/swachta.jpg" alt="" height="60px"
+            /></a>
+          </div>
+        </div>
+        <div id="language">
+          <select>
+            <option value="hindi">ENGLISH</option>
+            <option value="english">HINDI</option>
+            <option value="odia">ODIA</option>
+            <option value="bengali">BENGALI</option>
+            <option value="bengali">MALAYALAM</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="aboutt">
+      <!-- <a href="#home"><i class="fa-solid fa-house" style="color: white;"><span style="text-decoration: none;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> HOME</span></i></a>
+    <a href="aboutus"></a> -->
+    
+      <nav>
+        <ul>
+          <li>
+            <a href="#home"
+              ><i class="fa-solid fa-house" style="color: white"></i
+              ><span style="padding-left: 5px">HOME</span></a
+            >
+          </li>
+          <li class="dropdown">
+            <a href="#aboutus"
+              ><i class="fa-solid fa-users" style="color: white"></i
+              ><span style="padding-left: 5px">About Us</span></a
+            >
+            <ul class="dropdown-content">
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container_black">
+      <div class="left">
+          <div class="searchbar">
+            <form action="#" method="GET">
+              <input type="search" placeholder="TRACKING ID">
+              <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            </form>
+          </div>
+      </div> 
+      <div class="right">
+        <button class="buttonforships" type="button" onclick="setShip()">
+          <span class="button__text">SHIPS</span>
+          <span class="button__icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M80 23v18h23v14h18V41h23V23zm-8.2 50L42.38 279H135V144.5H95.5v-49H135V73zM185 137v46h78v-46zm96 0v46h78v-46zm96 0v46h78v-46zm-192 64v46h78v-46zm96 0v46h78v-46zm96 0v46h78v-46zm-192 64v46h78v-46zm96 0v46h19.3l32-32H359v-14zm96 0v14h78v-14zM27.22 297l24.11 108.5C76.75 398.1 105.7 391 128 391c24.2 0 46.2 8.6 67.2 16.6 21 8 41 15.4 60.8 15.4 19.8 0 39.8-7.4 60.8-15.4 19-7.2 38.9-15 60.5-16.4l-44.1-14.7 5.6-17 36.2 12V345h-17v-18h17v-30h-35.3l-32 32H154.4l-16-32zM393 297v30h17v18h-17v26.5l36.2-12 5.6 17-44 14.7c12.1.7 25.7 3.1 39.4 6.2 5.4-7.1 10.8-15.3 16.1-24 14.9-24.9 28.2-53.9 36.8-76.4zM128 407c-24.2 0-56.26 8.3-83.09 16.4-10.02 3-19.26 6-26.91 8.7v19c8.36-3 19.57-6.7 32.11-10.5C76.28 432.7 108.2 425 128 425c19.8 0 39.8 7.4 60.8 15.4s43 16.6 67.2 16.6c24.2 0 46.2-8.6 67.2-16.6 21-8 41-15.4 60.8-15.4 19.8 0 51.7 7.7 77.9 15.6 12.5 3.8 23.7 7.5 32.1 10.5v-19c-7.7-2.6-16.9-5.7-26.9-8.7-26.8-8.1-58.9-16.4-83.1-16.4-24.2 0-46.2 8.6-67.2 16.6-21 8-41 15.4-60.8 15.4-19.8 0-39.8-7.4-60.8-15.4S152.2 407 128 407zm0 36c-24.2 0-56.26 8.3-83.09 16.4-10.02 3-19.26 6-26.91 8.7v19c8.36-3 19.57-6.7 32.11-10.5C76.28 468.7 108.2 461 128 461c19.8 0 39.8 7.4 60.8 15.4s43 16.6 67.2 16.6c24.2 0 46.2-8.6 67.2-16.6 21-8 41-15.4 60.8-15.4 19.8 0 51.7 7.7 77.9 15.6 12.5 3.8 23.7 7.5 32.1 10.5v-19c-7.7-2.6-16.9-5.7-26.9-8.7-26.8-8.1-58.9-16.4-83.1-16.4-24.2 0-46.2 8.6-67.2 16.6-21 8-41 15.4-60.8 15.4-19.8 0-39.8-7.4-60.8-15.4S152.2 443 128 443z"></path></g></svg></span>
+        </button>
+        <button class="buttonforrailway" type="button" onclick="setRailway()">
+          <span class="button__text">RAILWAY</span>
+          <span class="button__icon"><svg viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-train" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>671</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(1.000000, 3.000000)" fill="#ffffff"> <path d="M4.979,9.484 C4.969,8.674 4.312,8.02 3.5,8.02 C2.689,8.02 2.033,8.674 2.023,9.484 L2.02,9.504 C2.02,10.323 2.683,10.986 3.499,10.986 C4.317,10.986 4.98,10.323 4.98,9.504 L4.979,9.484 L4.979,9.484 Z" class="si-glyph-fill"> </path> <path d="M9.998,9.454 C9.978,8.661 9.318,8.021 8.504,8.021 C7.69,8.021 7.031,8.661 7.012,9.454 C7.01,9.465 7.008,9.477 7.008,9.488 C7.008,10.298 7.678,10.955 8.504,10.955 C9.332,10.955 10.002,10.298 10.002,9.488 C10.002,9.478 9.998,9.465 9.998,9.454 L9.998,9.454 Z" class="si-glyph-fill"> </path> <path d="M13.998,9.454 C13.978,8.661 13.318,8.021 12.504,8.021 C11.69,8.021 11.031,8.661 11.012,9.454 C11.01,9.465 11.008,9.477 11.008,9.488 C11.008,10.298 11.678,10.955 12.504,10.955 C13.332,10.955 14.002,10.298 14.002,9.488 C14.002,9.478 13.998,9.465 13.998,9.454 L13.998,9.454 Z" class="si-glyph-fill"> </path> <path d="M15.938,9.98 C15.938,9.015 15.016,8.009 15.016,8.009 L14.969,8.009 L14.969,6.957 L14.969,5.015 L13.985,5.015 L13.985,2.015 L12.023,2.039 L12.023,5.039 L10.969,5.015 L10.969,3.036 L10.016,3.036 L10.016,5.015 L6.969,5.015 L6.969,1.953 L7.969,1.953 L7.969,0 L0.0160000001,0 L0.0160000001,1.938 L1.016,1.938 L1.016,7.063 L0.0300000001,7.063 L0.0300000001,9.985 L1.009,9.985 C0.98,9.829 0.961,9.669 0.961,9.505 C0.961,9.493 0.966,9.472 0.966,9.472 C0.983,8.082 2.11,6.959 3.501,6.959 C4.894,6.959 6.022,8.082 6.038,9.472 C6.038,9.482 6.044,9.493 6.044,9.505 C6.044,9.669 6.024,9.829 5.995,9.985 L14.97,9.985 L14.97,9.981 L15.938,9.981 L15.938,9.98 Z M5,5.041 L2.992,5.041 L2.992,1.969 L5,1.969 L5,5.041 L5,5.041 Z" class="si-glyph-fill"> </path> </g> </g> </g></svg></span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  
+      <div class="path">
+        <div class="login-company">TRACKING ID [176789012]</div>
+
+        <div class="path-text">
+          <span id="track-id" style="display: flex;justify-content: center;justify-items: center;">
+            <select style="background-color: transparent; border:none;font-family:monospace;">
+              <option value="TrainName">Cosco Antwerp</option>
+              <option value="TrainName">Train:18812</option>
+              <option value="TrainName">Train:18832</option>
+              <option value="TrainName">Train:17329</option>
+              <option value="TrainName">Train:12384</option>
+              <option value="TrainName">Train:21175</option>
+            </select>
+          </span><br /><br /></span>
+          <div class="container_tracker">
+            <div class="circle"><p id="port"><b style="font-size: large;">Monday, 25 August</b><br/>
+              6:30 AM<br/>
+              Cargo loaded onto train<br/>
+              Mundra Coal Terminal, Mundra, India<br/>
+              Departed from Mundra Coal Terminal<br/>
+              Mundra, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Tuesday, 26 August</b><br/>
+              12:15 PM<br/>
+              Arrived at Coal Sorting Facility<br/>
+              Mundra, India<br/>
+              3:45 PM<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 27 August</b><br/>
+              Cargo inspected and graded<br/>
+              Mundra, India<br/>
+              7:20 AM<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 27 August</b><br/>Departed from Coal Sorting Facility<br/>
+              Mundra, India<br/>
+              9:35 AM<br/>
+              Cargo transferred to coal freighter<br/>
+              Mundra Port, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Thursday, 28 August</b><br/>
+              2:10 PM<br/>
+              Coal freighter departs Mundra Port<br/>
+              Mundra Port, India<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Sunday, 31 August</b>
+              8:40 AM<br/>
+              Arrived at Colombo Port, Sri Lanka<br/>
+              Coal transshipment and quality check<br/>
+              Colombo Port, Sri Lanka<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Monday, 1 September</b>
+              3:15 PM<br/>
+              Departed from Colombo Port<br/>
+              Coal freighter en route to Port Klang<br/></p></div>
+            <div class="circle"><p id="port"><b style="font-size: large;">Wednesday, 3 September</b>
+              10:25 AM<br/>
+              Coal freighter arrived at Port Klang, Malaysia<br/>
+              Unloading and distribution process begins<br/>
+              Port Klang, Malaysia<br/></p></div>  
+            <div class="circle"><p id="port"><b style="font-size: large;">Thursday, 4 September</b>
+              11:55 AM<br/>
+              Coal cargo successfully delivered<br/>
+              Unloading and distribution process begins<br/>
+              Final destination: Port Klang, Malaysia<br/></p></div>  
+        </div>
+        </div>
+      </div>
+      <div class="map">
+
+
+        <div class="covering"></div>
+        <div class="api-render" id="vessel-map">
+          <script type="text/javascript">
+            var width = "700";
+            var height = "540";
+            var latitude = "10.00";
+            var longitude = "78.40";
+            var zoom = "8";
+            var imo = "9246396";
+            var show_track = "true";
+          </script>
+          <script
+            type="text/javascript"
+            src="https://www.vesselfinder.com/aismap.js"
+          ></script>
+          
+        </div>
+        <div id="g-map" class="api-render" style="width: 100%; height: 550px;">
+          <script>
+            function initgoogleMap() {
+              const map = new google.maps.Map(document.getElementById('g-map'), {
+                center: { lat: 20.2961, lng: 85.8245 }, // Replace with your desired coordinates
+                zoom: 13, // Adjust the initial zoom level
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=<%= apiKey %>&callback=initgoogleMap" async defer></script>
+        </div>            
+
+      </div>
+    </div>
+    <script>
+      function setRailway() {
+        var ship_map = document.getElementById('vessel-map');
+        var railway_map = document.getElementById('g-map');
+            railway_map.style.visibility = 'visible';
+            ship_map.style.visibility = 'hidden';
+        }
+      function setShip() {
+        var ship_map = document.getElementById('vessel-map');
+        var railway_map = document.getElementById('g-map');
+            railway_map.style.visibility = 'hidden';
+            ship_map.style.visibility = 'visible';
+        }
+        
+
+    </script>
+    <footer class="footer">Created by Team खNIJ</footer>
+  </body>
+</html>
